@@ -1,0 +1,10 @@
+{
+  "name": "Casa Alba Kindergarten",
+  "short_name": "Casa Alba",
+  "lang": "es-MX",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#fefbf6",
+  "theme_color": "#fefbf6",
+  "icons": [{ "src": "assets/favicon.svg", "sizes": "any", "type": "image/svg+xml" }]
+}

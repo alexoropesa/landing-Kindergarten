@@ -1,0 +1,14 @@
+{
+  "name": "casa-alba-kindergarten",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Landing page de captación de leads para Casa Alba Kindergarten (sitio estático, sin build).",
+  "type": "module",
+  "scripts": {
+    "images": "node scripts/optimize-images.mjs",
+    "serve": "npx --yes serve@14.2.4 -l 5173 ."
+  },
+  "devDependencies": {
+    "sharp": "0.33.5"
+  }
+}

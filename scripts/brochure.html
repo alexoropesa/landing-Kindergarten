@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+<meta charset="utf-8">
+<title>Folleto de programas 2027–2028 · Casa Alba Kindergarten</title>
+<!-- Fuente del PDF assets/docs/folleto-casa-alba.pdf. Reutiliza los tokens de Design.md.
+     Regenerar: chrome --headless --print-to-pdf=assets/docs/folleto-casa-alba.pdf scripts/brochure.html -->
+<style>
+  @font-face { font-family: "Instrument Sans"; src: url("../assets/fonts/instrument-sans-latin-var.woff2") format("woff2"); font-weight: 400 700; }
+  :root { --c-cream:#fefbf6; --c-ink:#252324; --c-yellow:#ffec88; --c-paper-yellow:#fffce0; --c-grey-650:#625d60; --c-grey-100:#f6f3ee; --line: color-mix(in hsl, #252324 20%, transparent); }
+  @page { size: A4; margin: 0; }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: "Instrument Sans", Arial, sans-serif; color: var(--c-ink); background: var(--c-cream); font-size: 11pt; line-height: 1.5; }
+  .page { width: 210mm; height: 297mm; padding: 18mm; page-break-after: always; position: relative; overflow: hidden; display: flex; flex-direction: column; gap: 8mm; }
+  .page:last-child { page-break-after: auto; }
+  h1, h2, h3, p { margin: 0; }
+  h1 { font-size: 40pt; line-height: 1.05; letter-spacing: -0.04em; font-weight: 400; }
+  h2 { font-size: 26pt; line-height: 1.1; letter-spacing: -0.04em; font-weight: 400; }
+  h3 { font-size: 13pt; font-weight: 500; letter-spacing: -0.02em; }
+  .eyebrow { font-size: 8pt; letter-spacing: .08em; text-transform: uppercase; font-weight: 500; color: var(--c-grey-650); }
+  .muted { color: var(--c-grey-650); }
+  img { display: block; width: 100%; object-fit: cover; border-radius: 4mm; }
+  .cover { background: var(--c-paper-yellow); }
+  .cover img { height: 150mm; }
+  .brand { display: flex; align-items: center; gap: 3mm; font-weight: 500; font-size: 13pt; }
+  .brand svg { width: 9mm; height: 9mm; }
+  .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 6mm; }
+  .card { background: var(--c-grey-100); border-radius: 3mm; padding: 6mm; display: grid; gap: 2mm; align-content: start; }
+  .prog { display: grid; grid-template-columns: 62mm 1fr; gap: 6mm; padding-top: 6mm; border-top: 1px solid var(--line); }
+  .prog img { height: 46mm; }
+  table { width: 100%; border-collapse: collapse; font-size: 10pt; }
+  th { text-align: left; font-size: 8pt; letter-spacing: .08em; text-transform: uppercase; color: var(--c-grey-650); font-weight: 500; padding: 0 0 2mm; border-bottom: 1px solid var(--line); }
+  td { padding: 2.5mm 0; border-bottom: 1px solid color-mix(in hsl, #252324 10%, transparent); }
+  .tag { justify-self: start; display: inline-block; background: var(--c-yellow); border-radius: 1mm; padding: .5mm 2mm; font-size: 8pt; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; }
+  .steps { display: grid; gap: 4mm; counter-reset: s; }
+  .steps li { list-style: none; display: grid; grid-template-columns: 9mm 1fr; gap: 3mm; }
+  .steps li::before { counter-increment: s; content: counter(s); width: 7mm; height: 7mm; border-radius: 50%; background: var(--c-ink); color: var(--c-cream); display: grid; place-items: center; font-size: 9pt; font-weight: 600; }
+  ul.check { padding-left: 4mm; margin: 0; display: grid; gap: 1.5mm; }
+  .foot { margin-top: auto; padding-top: 5mm; border-top: 1px solid var(--line); display: flex; justify-content: space-between; font-size: 9pt; color: var(--c-grey-650); }
+  .note { font-size: 8.5pt; color: var(--c-grey-650); }
+</style>
+</head>
+<body>
+  <!-- 1 · Portada -->
+  <section class="page cover">
+    <div class="brand"><svg viewBox="0 0 32 32"><path d="M4 22a12 12 0 0124 0" fill="none" stroke="#252324" stroke-width="2.4" stroke-linecap="round"/><path d="M9.5 22a6.5 6.5 0 0113 0" fill="#ffec88" stroke="#252324" stroke-width="2.4"/><path d="M2 26h28" stroke="#252324" stroke-width="2.4" stroke-linecap="round"/></svg>Casa Alba Kindergarten</div>
+    <img src="brochure-assets/hero.jpg" alt="">
+    <p class="eyebrow">Folleto de programas · Ciclo 2027–2028</p>
+    <h1>Donde la curiosidad se convierte en amor por aprender</h1>
+    <p class="muted" style="max-width:140mm">Educación inicial para niñas y niños de 3 a 6 años en Coyoacán, Ciudad de México. Grupos pequeños (8:1), aprendizaje a través del juego y un equipo con más de 15 años de experiencia.</p>
+    <div class="foot"><span>casa-alba.example</span><span>admisiones@casa-alba.example · +52 55 0000 0000</span></div>
+  </section>
+
+  <!-- 2 · Programas -->
+  <section class="page">
+    <p class="eyebrow">Nuestros programas</p>
+    <h2>Un programa para cada etapa</h2>
+    <div class="prog"><img src="brochure-assets/program-prek.jpg" alt=""><div style="display:grid;gap:2mm;align-content:start"><span class="tag">3 años · 8:00–13:00</span><h3>Pre-Kinder</h3><p class="muted">Desarrollo sensorial, lenguaje oral y socialización temprana. Adaptación gradual de dos semanas y bitácora semanal con fotos.</p><p class="note">Extensión opcional hasta las 15:00 con comida.</p></div></div>
+    <div class="prog"><img src="brochure-assets/program-kinder.jpg" alt=""><div style="display:grid;gap:2mm;align-content:start"><span class="tag">4–5 años · 8:00–14:00</span><h3>Kindergarten</h3><p class="muted">Iniciación a la lectoescritura y matemáticas lúdicas con material manipulativo, proyectos de indagación e inglés por inmersión. Comida incluida.</p></div></div>
+    <div class="prog"><img src="brochure-assets/program-after.jpg" alt=""><div style="display:grid;gap:2mm;align-content:start"><span class="tag">3–6 años · 14:00–17:30</span><h3>After-School y actividades</h3><p class="muted">Arte, música, psicomotricidad y bilingüismo. Modalidad de 2, 3 o 5 días por semana, abierto a alumnos de otras escuelas.</p></div></div>
+    <div class="foot"><span>Casa Alba Kindergarten</span><span>2 / 4</span></div>
+  </section>
+
+  <!-- 3 · Enfoque e instalaciones -->
+  <section class="page">
+    <p class="eyebrow">Nuestro enfoque</p>
+    <h2>Cuatro ideas guían cada día</h2>
+    <div class="grid2">
+      <div class="card"><h3>01 · Aprender jugando</h3><p class="muted">Materiales abiertos que invitan a construir, probar y volver a intentar.</p></div>
+      <div class="card"><h3>02 · Pensamiento crítico</h3><p class="muted">Proyectos que nacen de sus preguntas.</p></div>
+      <div class="card"><h3>03 · Inteligencia emocional</h3><p class="muted">Nombrar lo que sienten y cuidar a los demás.</p></div>
+      <div class="card"><h3>04 · Autonomía y comunidad</h3><p class="muted">Tareas reales a su altura que construyen confianza.</p></div>
+    </div>
+    <div class="grid2"><img src="brochure-assets/facility-classroom.jpg" alt="" style="height:55mm"><img src="brochure-assets/facility-garden.jpg" alt="" style="height:55mm"></div>
+    <h3>Seguridad</h3>
+    <ul class="check muted"><li>Acceso único con registro digital de llegadas y salidas.</li><li>Entrega solo a adultos autorizados con identificación.</li><li>Videovigilancia en áreas comunes (nunca en baños).</li><li>Equipo certificado en primeros auxilios pediátricos y simulacros trimestrales.</li><li>Menú supervisado por nutrióloga y registro de alergias.</li></ul>
+    <div class="foot"><span>Casa Alba Kindergarten</span><span>3 / 4</span></div>
+  </section>
+
+  <!-- 4 · Admisión y costos -->
+  <section class="page">
+    <p class="eyebrow">Admisión y costos</p>
+    <h2>Cómo unirte a Casa Alba</h2>
+    <ol class="steps"><li><div><h3>Visita guiada (45 min)</h3><p class="muted">Recorrido por aulas, jardín y comedor; conversación con dirección.</p></div></li><li><div><h3>Mañana de convivencia</h3><p class="muted">Tu hija o hijo pasa una mañana con su futuro grupo.</p></div></li><li><div><h3>Entrevista breve</h3><p class="muted">Conocemos a la familia y resolvemos dudas.</p></div></li><li><div><h3>Reserva de lugar</h3><p class="muted">Entrega de documentos y pago de inscripción.</p></div></li></ol>
+    <table>
+      <thead><tr><th>Concepto</th><th>Pre-Kinder</th><th>Kindergarten</th><th>After-School</th></tr></thead>
+      <tbody>
+        <tr><td>Inscripción anual</td><td>Por confirmar</td><td>Por confirmar</td><td>Por confirmar</td></tr>
+        <tr><td>Colegiatura mensual (×10)</td><td>Por confirmar</td><td>Por confirmar</td><td>Por día/semana</td></tr>
+        <tr><td>Descuento por hermanos</td><td colspan="3">Sí, en colegiatura</td></tr>
+        <tr><td>Descuento por pago anual</td><td colspan="3">Sí, por pago anticipado</td></tr>
+      </tbody>
+    </table>
+    <p class="note">Documento de demostración: la tabla de costos vigente la define la escuela y se entrega en la visita.</p>
+    <div class="card" style="background:var(--c-paper-yellow)"><h3>Agenda tu visita</h3><p class="muted">casa-alba.example · WhatsApp +52 55 0000 0000 · admisiones@casa-alba.example<br>Av. Francisco Sosa, Coyoacán, CDMX · Lunes a viernes 7:30–17:30</p></div>
+    <div class="foot"><span>Casa Alba Kindergarten</span><span>4 / 4</span></div>
+  </section>
+</body>
+</html>
